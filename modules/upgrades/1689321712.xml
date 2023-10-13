@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  <query>
+        INSERT INTO `gotasty_delivery_method` (`id`, `credit_type`, `status`, `min_percentage`, `max_percentage`, `payment_type`, `type`, `created_at`, `updated_at`, `group_type`) VALUES (NULL, '', 'Active', '0.00000000', '100.00000000', 'Dry Delivery Charges', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '')
+  </query>
+  <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'dryDeliveryFee', '15', '', '', 'Dry Delivery Fee', 'Standard Platform')
+</query>
+</document> 

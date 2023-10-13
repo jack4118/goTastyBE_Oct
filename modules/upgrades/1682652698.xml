@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE sale_order SET status = 
+        CASE
+            WHEN status = 'draft' THEN 'Draft'
+            WHEN status = 'pending' THEN 'Pending'
+            ELSE status
+        END
+    WHERE status IN ('draft', 'pending');
+    </query>
+</document> 

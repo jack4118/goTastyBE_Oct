@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'product', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'product_media', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'inv_language', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'cooking_suggestion_details', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'description', 'journalTranslate', 'A00145', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'categ_id', 'journalTranslate', 'A00344', '1', '0')
+    </query>
+</document>

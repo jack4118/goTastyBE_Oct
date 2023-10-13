@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `level`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `master_disabled`, `site`, `created_at`, `updated_at`, `reference_table`, `reference_id`, `last_line`) VALUES (NULL, 'Promotion Module', 'Promotion Module', 'Menu', '0', '', '0', '97', '', '', '0', '0', 'Admin', '2023-05-08 19:40:58', '2023-05-15 09:13:46', '', '', '0')
+    </query>
+     <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', '452', '0', '2022-01-24 12:31:06', '2022-01-24 12:31:06');
+    </query>
+    <query>
+         UPDATE `permissions` SET `type` = 'Sub Menu', `level` = '1', `priority` = '1' , `parent_id` = '450' WHERE `permissions`.`id` = 430
+    </query>
+     <query>
+        UPDATE `permissions` SET `parent_id` = '452' WHERE `permissions`.`id` = 430;
+    </query>
+     <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', '450', '0', '2023-06-12 17:20:06', '2022-06-12 17:20:06');	
+    </query>
+     <query>
+         INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `level`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `master_disabled`, `site`, `created_at`, `updated_at`, `reference_table`, `reference_id`, `last_line`) VALUES (NULL, 'Pricelist Listing', 'Pricelist Listing', 'Sub Menu', '452', 'pricelisting.php', '1', '2', '', '', '0', '0', 'Admin', '2023-05-08 19:40:58', '2023-05-15 09:13:46', '', '', '0');
+    </query>
+     <query>
+         INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', '453', '0', '2022-01-24 12:31:06', '2022-01-24 12:31:06');
+    </query>
+     <query>
+         INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `level`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `master_disabled`, `site`, `created_at`, `updated_at`, `reference_table`, `reference_id`, `last_line`) VALUES (NULL, 'Add Pricelist', 'Add Pricelist', 'Page', '452', 'addPricelist.php', '1', '3', '', '', '0', '0', 'Admin', '2023-05-08 19:40:58', '2023-05-15 09:13:46', '', '', '0');
+    </query>
+    <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, `type`, `parent_id`, `file_path`, `level`, `priority`, `icon_class_name`, `translation_code`, `disabled`, `master_disabled`, `site`, `created_at`, `updated_at`, `reference_table`, `reference_id`, `last_line`) VALUES (NULL, 'Edit Pricelist', 'Edit Pricelist', 'Page', '452', 'editPricelist.php', '1', '4', '', '', '0', '0', 'Admin', '2023-05-08 19:40:58', '2023-05-15 09:13:46', '', '', '0');
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', '454', '0', '2022-01-24 12:31:06', '2022-01-24 12:31:06');
+    </query>
+    <query>
+        INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) VALUES (NULL, '3', '455', '0', '2022-01-24 12:31:06', '2022-01-24 12:31:06');
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `stock` CHANGE `expiration_date` `expiration_date` date NOT NULL;
+    </query>
+</document> 

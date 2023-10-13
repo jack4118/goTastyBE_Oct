@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE permissions SET disabled = 0
+    WHERE id = '159' and name = 'Package'
+    </query>
+    <query>
+        UPDATE permissions SET master_disabled = 0
+    WHERE id = '159' and name = 'Package'
+    </query>
+</document>

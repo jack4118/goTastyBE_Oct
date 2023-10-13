@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `sale_order_detail`  ADD `price_reduce_subtotal` varchar(255) AFTER `subtotal`;
+    </query>
+</document>

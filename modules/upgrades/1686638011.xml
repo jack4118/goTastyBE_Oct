@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `so_service`  ADD `client_id` varchar(255) AFTER `id`;
+    </query>
+</document>

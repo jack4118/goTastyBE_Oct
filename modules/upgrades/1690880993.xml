@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `product_review` ADD `is_anonymous` TINYINT(1) NULL AFTER `is_approve`;
+    </query>
+</document>

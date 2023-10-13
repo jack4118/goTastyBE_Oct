@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `product_category` ADD `parent_id` BIGINT(20) NOT NULL AFTER `name`, ADD `description` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL AFTER `parent_id`;
+    </query>
+</document> 

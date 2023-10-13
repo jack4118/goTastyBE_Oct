@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `purchase_order` DROP COLUMN `assign_to`;
+    </query>
+    <query>
+        ALTER TABLE `po_assign` CHANGE `assignee` `assignee` INT(11) NULL DEFAULT NULL;
+    </query>
+    <query>
+        ALTER TABLE `po_assign` CHANGE `assign_by` `assign_by` INT(11) NULL DEFAULT NULL;
+    </query>
+</document>

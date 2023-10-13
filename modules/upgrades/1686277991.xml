@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `start_date` datetime AFTER `used_amount`;
+    </query>
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `end_date` datetime AFTER `start_date`;
+    </query>
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `issued` int(255) AFTER `reference_id`;
+    </query>
+    <query>
+    ALTER TABLE `mlm_promo_code` CHANGE `used_amount` `used_amount` INT(255) NOT NULL;
+    </query>
+    <query>
+    ALTER TABLE `promo_code_detail` DROP COLUMN `start_date`, DROP COLUMN end_date;
+    </query>
+</document>

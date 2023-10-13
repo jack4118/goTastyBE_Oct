@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `product` ADD `reminder_day` int(11) AFTER `expired_day`;
+    </query>
+    <query>
+        ALTER TABLE `stock` ADD `reminder_date` date AFTER `expiration_date`;
+    </query>
+</document>

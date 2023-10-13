@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `purchase_order` CHANGE `purchase_date` `purchase_date` DATE NULL DEFAULT NULL;
+    </query>
+</document>

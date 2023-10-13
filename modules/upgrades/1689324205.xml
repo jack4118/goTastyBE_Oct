@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  <query>
+      ALTER TABLE `product` ADD `delivery_method` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `full_instruction2`;
+  </query>
+  <query>
+      UPDATE product SET delivery_method = '2' WHERE delivery_method = '';
+ </query>
+</document> 

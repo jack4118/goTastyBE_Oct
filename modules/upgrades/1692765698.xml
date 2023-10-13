@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `url2`, `remark`, `currency`, `balance`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'parcel', '', '', '', 'parcelCancel', '0', '0', '0', '', 'https://staging.api.parcelhub.com.my/v1/shipments/cancel', '', '', '', '0.00000000', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'https://staging.api.parcelhub.com.my/v1/shipments/cancel', '', '175', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+</document> 

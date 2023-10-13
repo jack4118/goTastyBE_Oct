@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `discount_apply_on` varchar(255) AFTER `used_amount`;
+    </query>
+    <query>
+    ALTER TABLE `promo_code_detail` DROP COLUMN `discount_apply_on`;
+    </query>
+</document>

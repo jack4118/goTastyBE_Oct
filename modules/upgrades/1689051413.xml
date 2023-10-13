@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `outgoing_webservices` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `command` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `data_in` longtext COLLATE utf8_unicode_ci NOT NULL,
+            `data_out` longtext COLLATE utf8_unicode_ci NOT NULL,
+            `status` varchar(25) COLLATE utf8_unicode_ci,
+            `http_code` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `completed_at` datetime ,
+            `duration` int(10) ,
+            `created_at` datetime ,
+            `updated_at` datetime ,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

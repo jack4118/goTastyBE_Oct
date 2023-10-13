@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `gotasty_delivery_method` (`id`, `name`, `status`, `price`, `deleted`) VALUES (NULL, 'Package Delivery Charges', 'Active', '0', '0')
+    </query>
+</document>

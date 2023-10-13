@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE system_settings SET value = 'freeShipping#billDiscount#doubleReward#comingSoon'
+    WHERE name = 'promoCode' AND type = 'promoCode' AND module = 'mlm_promo_code'
+    </query>
+</document>

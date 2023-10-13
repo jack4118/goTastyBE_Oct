@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `permissions` SET `name` = 'Edit Purchase Request', `description` = 'Edit Purchase Request' WHERE `permissions`.`id` = 410;
+    </query>
+</document>

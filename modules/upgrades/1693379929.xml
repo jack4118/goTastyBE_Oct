@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `purchase_order` ADD `assign_to` INT(11) AFTER `approved_by`;
+    </query>
+</document>

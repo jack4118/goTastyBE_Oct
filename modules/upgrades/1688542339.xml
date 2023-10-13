@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'telegramUserNotification', '-1001926795126', 'telegram', '', 'Telegram Notification for Login, Forget Password and Register', '')
+</query>
+
+</document> 

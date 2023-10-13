@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10007', 'GoTasty Login Message', '*Login Message* \n\nMember ID: %%member_id%%\nType: %%type%%\nPhone Number: %%phone%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member login GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10008', 'GoTasty Reset Password Message', '*Reset Password Message* \n\nClient ID: %%clientID%%\nPhone Number: %%phone%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member reset password GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10009', 'GoTasty OTP Request Message', '*OTP Request* \n\nPhone : %%otpParams%%\nSend Type: phone\nOTP Code: %%otpRes%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member send OTP request GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10010', 'GoTasty Failed to Update User Existing profile Message', '*Failed to Update User Existing profile* \n\nClient Phone No: %%phoneNumber%%\nAddress: %%address%%\nCountry ID: %%countryID%%\nState ID: %%stateID%%\nCity ID: %%cityID%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member failed to update profile GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10011', 'GoTasty Failed to register new guest Message', '*Failed to register new guest Message* \n\nMember ID: %%memberID%%\nName: %%$name%%\nType: Guest\nPhone Number: +%%phoneNumber%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when failed to register guest GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10012', 'GoTasty Register New guest Message', '*Register New guest Message* \n\nMember ID: %%memberID%%\nName: %%name%%\nType: Guest\nPhone Number: +%%phoneNumber%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when register new guest GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10013', 'GoTasty Register Issue Message', '*Register Issue* \n\nError Type: %%errorType%%\nError Message: %%errorMessage%%\nType: %%type%%\nPhone Number: %%phoneNumber%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member register issue GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) 
+        VALUES ('10014', 'GoTasty Register Message', '*Register Message* \n\nMember ID: %%memberID%%\nType: Client\nPhone Number: +%%phoneNumber%%\nReferral ID: %%sponsorID%%\nReferral Name: %%sponsorName%%\nReferral Phone No: +%%sponsorPhone%%\nDate: %%currentDate%%\nTime: %%currentTime%%', 'Triggers when member register new account GoTasty.', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) 
+        VALUES ('sendTelegramNotificationURL', 'https://api.telegram.org/bot6084688226:AAHxUHgbmfHG9XAcOJEXSJIpYu0PdKDM37w', '', '4', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+    </query>
+</document> 

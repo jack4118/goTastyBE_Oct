@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE shopping_cart ADD token varchar(255) COLLATE utf8_unicode_ci AFTER quantity;
+    </query>
+</document> 

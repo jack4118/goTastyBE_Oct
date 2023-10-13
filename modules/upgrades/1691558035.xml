@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10030', 'GoTasty career send Internal', 'Name: %%client_name%%<br>Email: %%client_email%%<br>Phone: %%phone%%', 'Triggers when client submit career application, and system should send this message back to internal', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+     <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10031', 'GoTasty write to us send Internal', 'Name: %%client_name%%<br>Email: %%client_email%%<br>Message: %%message%%', 'Triggers when client submit write to us form, and system should send this message back to internal', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_assigned` (`id`, `name`, `code`, `recipient`, `type`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'Chee Lam', '10029', 'cheelam.thenux@gmail.com', 'email', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_assigned` (`id`, `name`, `code`, `recipient`, `type`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'Han Yao', '10030', 'hanyaolim.thenux@gmail.com', 'email', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+    </query>
+     <query>
+         INSERT INTO `message_assigned` (`id`, `name`, `code`, `recipient`, `type`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'Han Yao', '10031', 'hanyaolim.thenux@gmail.com', 'email', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+    </query>
+</document>

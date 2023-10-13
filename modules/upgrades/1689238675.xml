@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `provider` SET `company` = 'Go Tasty Sdn. Bhd.', `name` = 'email', `username` = 'ecommerceteam.cs@gmail.com', `password` = 'ecommerce.cs1234' WHERE `provider`.`id` = 1;
+    </query>
+    <query>
+        INSERT INTO 
+        `system_settings` 
+        (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) 
+        VALUES 
+        (NULL, 'Order Status URL', 'https://dev.gotasty.net/orderStatus?', 'sendPOEmail', '', 'Order Status URL', 'Standard Platform');
+    </query>
+
+</document>

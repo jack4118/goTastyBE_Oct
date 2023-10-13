@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `product`  ADD `view_count` varchar(255) AFTER `sales_count`;
+    </query>
+</document>

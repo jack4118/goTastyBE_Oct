@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `stock` ADD `rack_no` VARCHAR(255) AFTER `remark`;
+    </query>
+</document>

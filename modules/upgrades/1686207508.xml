@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `updated_at` datetime AFTER `created_at`;
+    </query>
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `used_amount` varchar(255) NOT NULL AFTER `reference_id`;
+    </query>
+</document>

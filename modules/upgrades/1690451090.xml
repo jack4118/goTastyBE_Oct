@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'fpx_checksum_url', 'https://uat.mepsfpx.com.my/FPXMain/sellerNVPTxnStatus.jsp', 'fpxURL', '', 'build checksum fpx url', 'Standard Platform');
+    </query>
+</document>

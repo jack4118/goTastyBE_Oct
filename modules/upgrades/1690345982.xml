@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `system_settings` (`id`, `name`, `value`, `type`, `reference`, `description`, `module`) VALUES (NULL, 'redeemPoint', '0.005', '', '', 'Redeem Point Rate', 'Standard Platform')
+    </query>
+</document>

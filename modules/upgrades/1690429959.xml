@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        DROP TABLE IF EXISTS `gotasty_delivery_method`;
+    </query>
+    <query>
+        DROP TABLE IF EXISTS `delivery_method_detail`;
+    </query>
+    <query>
+        CREATE TABLE `gotasty_delivery_method` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `name` varchar(255) NOT NULL,
+        `status` varchar(255) COLLATE utf8_unicode_ci,
+        `price` decimal(20,8) NOT NULL,
+        `deleted` tinyint(1) NOT NULL,
+        `created_at` datetime NOT NULL,
+        `updated_at` datetime NOT NULL,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    </query>
+    <query>
+        CREATE TABLE `delivery_method_detail` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `delivery_method_id` bigint(20) NOT NULL,
+        `quantity` int(255) NULL,
+        `amount` decimal(20,8) NULL,
+        `deleted` tinyint(1) NOT NULL,
+        `created_at` datetime NOT NULL,
+        `updated_at` datetime NOT NULL,
+        PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    </query>
+    <query>
+        INSERT INTO `gotasty_delivery_method` (`id`, `name`, `status`, `price`, `deleted`) VALUES (NULL, 'Self Pickup', 'Active', '0', '0')
+    </query>
+    <query>
+        INSERT INTO `gotasty_delivery_method` (`id`, `name`, `status`, `price`, `deleted`) VALUES (NULL, 'Delivery Charges', 'Active', '35', '0')
+    </query>
+    <query>
+        INSERT INTO `gotasty_delivery_method` (`id`, `name`, `status`, `price`, `deleted`) VALUES (NULL, 'Dry Delivery Charges', 'Active', '15', '0')
+    </query>
+    <query>
+        INSERT INTO `delivery_method_detail` (`id`, `delivery_method_id`, `quantity`, `amount`, `deleted`) VALUES (NULL, '2', '', '280', '0')
+    </query>
+    <query>
+        INSERT INTO `delivery_method_detail` (`id`, `delivery_method_id`, `quantity`, `amount`, `deleted`) VALUES (NULL, '3', '6', '280', '0')
+    </query>
+</document>

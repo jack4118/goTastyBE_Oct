@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  <query>
+INSERT INTO provider(company, name,api_key, type, url1) VALUES
+        ('GoTasty', 'telegram',
+        '5821386642:AAHFonqAkMHSGwtmW1N4W8Slqq3oPF2nJmI',
+        'notification','https://api.telegram.org/bot5821386642:AAHFonqAkMHSGwtmW1N4W8Slqq3oPF2nJmI');
+</query>
+  <query>
+INSERT INTO message_code(code, title, content,description, module) VALUES
+        ('10015', 'GoTasty Stock Warning Telegram Notification',
+        '*Low Stock Notification* 
+
+Product ID: %%productID%%
+
+Product Name: %%productName%%
+
+Stock: %%stock%%
+
+SKUCode: %%skucode%%',
+        'Trigger when stock less than 5','Standard Platform');
+</query>
+</document> 

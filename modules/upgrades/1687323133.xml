@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `so_service` CHANGE `amount` `amount` DECIMAL(10, 2) NOT NULL;
+    </query>
+</document>

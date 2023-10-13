@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `purchase_order` ADD `deleted` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci AFTER `approved_date`;
+    </query>
+    <query>
+        UPDATE `purchase_order` SET `deleted` = '0' 
+    </query>
+</document>

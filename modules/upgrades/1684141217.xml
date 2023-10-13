@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE package_item ADD quantity int(11) AFTER product_id;
+    </query>
+    <query>
+        ALTER TABLE package_item ADD type varchar(255) AFTER quantity;
+    </query>
+</document> 

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+  <query>
+INSERT INTO `processes` (`id`, `name`, `file_path`, `output_path`, `process_id`, `disabled`, `arg1`, `arg2`, `arg3`, `arg4`, `arg5`, `created_at`, `updated_at`) 
+VALUES (NULL, 'LowStockWarning', 'lowStockWarning.php', 'lowStockWarning.log', '', '0', 'A', '5', '5', '', '', '', '');
+</query>
+</document> 

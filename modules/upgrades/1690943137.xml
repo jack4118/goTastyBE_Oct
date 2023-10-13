@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `sale_order_item` DROP COLUMN `quantity`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order_item` DROP COLUMN `so_id`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order_item` ADD `so_no` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `id`;
+    </query>
+</document>

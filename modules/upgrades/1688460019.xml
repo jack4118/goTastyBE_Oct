@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `goTasty_utm_history` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `mobile_number` varchar(255) COLLATE utf8_unicode_ci,
+            `email` varchar(255) COLLATE utf8_unicode_ci,
+            `action_type` varchar(255) COLLATE utf8_unicode_ci,
+            `device` varchar(255) COLLATE utf8_unicode_ci,
+            `utm_campaign` varchar(255) COLLATE utf8_unicode_ci,
+            `user_agent` varchar(255) COLLATE utf8_unicode_ci,
+            `device_id` varchar(255) COLLATE utf8_unicode_ci,
+            `ip` varchar(255) COLLATE utf8_unicode_ci,
+            `country` varchar(255) COLLATE utf8_unicode_ci,
+            `url` varchar(255) COLLATE utf8_unicode_ci,
+            `tracking_site` varchar(255) COLLATE utf8_unicode_ci,
+            `created_at` datetime,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

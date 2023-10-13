@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `admin_setting` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) COLLATE utf8_unicode_ci,
+            `value` varchar(255) COLLATE utf8_unicode_ci,
+            `type` varchar(255) COLLATE utf8_unicode_ci,
+            `reference` varchar(255) COLLATE utf8_unicode_ci,
+            `description` text COLLATE utf8_unicode_ci,
+            `admin_id` bigint(20),
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

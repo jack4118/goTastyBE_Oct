@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+CREATE TABLE `action_permission` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `module` varchar(255) NOT NULL,
+ `action` varchar(255) NOT NULL,
+ `user_id` bigint(20) NOT NULL,
+ `granted_by` bigint(20) NOT NULL,
+ `active` tinyint(1) NOT NULL DEFAULT 1,
+ `reference_table` varchar(255) NOT NULL,
+ `reference_id` varchar(255) NOT NULL,
+ `reference_column` varchar(255) NOT NULL,
+ `created_at` datetime NOT NULL,
+ `updated_at` datetime NOT NULL,
+ PRIMARY KEY (`id`),
+ KEY `module` (`module`),
+ KEY `user_id` (`user_id`),
+ KEY `active` (`active`)
+) ENGINE=InnoDB;
+    </query>
+</document> 

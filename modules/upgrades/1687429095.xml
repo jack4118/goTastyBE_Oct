@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `promo_code_product`  ADD `sale_price` varchar(255) AFTER `quantity`;
+    </query>
+</document>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `warehouse` (`warehouse_location`, `warehouse_address`, `po_id`, `stock_id`, `created_at`, `updated_at`) 
+        VALUES ('Kuala Lumpur','SouthGate, Jalan Chan Sow Lin','','0','2023-04-05 00:00:00','2023-04-05 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `warehouse` (`warehouse_location`, `warehouse_address`, `po_id`, `stock_id`, `created_at`, `updated_at`) 
+        VALUES ('Penang','Skyline City, Lintang Sungai Pinang','','0','2023-04-05 00:00:00','2023-04-05 00:00:00');
+    </query>
+</document> 

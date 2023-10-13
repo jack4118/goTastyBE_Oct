@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10016', 'GoTasty Member Enquiry', ' Client Name: %%name%% Client Email: %%email%% Client Message: %%message%%', '', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type`, `url1`, `created_at`) VALUES (NULL, 'GoTastyMemberEnquiry', 'telegram', '', '', '6350883019:AAGqI3L746YuTB26hA7sgRtyXsnHhsZLRh8', 'notification', 'https://api.telegram.org/bot6350883019:AAGqI3L746YuTB26hA7sgRtyXsnHhsZLRh8', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'sendClientEnquiryTelegramNotification', 'https://api.telegram.org/bot6350883019:AAGqI3L746YuTB26hA7sgRtyXsnHhsZLRh8', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+    </query>
+</document>

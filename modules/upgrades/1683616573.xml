@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<query>
+CREATE TABLE `mlm_bonus_direct_sponsor` (
+    `id` bigint(20) NOT NULL AUTO_INCREMENT,
+    `client_id` bigint(20) NOT NULL,
+    `bonus_date` date NOT NULL,
+    `from_sales_id` bigint(20) NOT NULL,
+    `from_id` bigint(20) NOT NULL,
+    `from_amount` decimal(20,8) NOT NULL,
+    `calculated_amount` decimal(20,8) NOT NULL,
+    `unit_price` decimal(20,8) NOT NULL,
+    `payable_amount` decimal(20,8) NOT NULL,
+    `paid` tinyint(1) NOT NULL,
+    `batch_id` bigint(20) NOT NULL,
+    `created_at` datetime NOT NULL,
+    PRIMARY KEY (`id`),
+    KEY `client_id` (`client_id`,`batch_id`,`paid`)
+) ENGINE=InnoDB
+</query>
+</document> 

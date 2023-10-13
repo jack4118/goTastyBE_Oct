@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE INDEX idx_po_id ON po_assign (po_id);
+    </query>
+    <query>
+        CREATE INDEX idx_status ON po_assign (status);
+    </query>
+</document>

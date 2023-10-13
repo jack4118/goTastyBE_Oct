@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `stock_move_line`  ADD `tracking_no` varchar(255) AFTER `stock_id`;
+    </query>
+</document>

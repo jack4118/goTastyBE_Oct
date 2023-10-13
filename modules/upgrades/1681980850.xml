@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `credit` (`id`, `name`, `type`, `code`, `description`, `dcm`, `rate`, `image_name`, `translation_code`, `admin_translation_code`, `priority`, `created_at`, `updated_at`) VALUES (NULL, 'rewardPoint', 'rewardPoint', 'RC', 'rewardPoint', '2', '1.00000000', 'RC.jpg', 'C00003', 'C00004', '3', '2022-08-31 23:56:16', '2022-08-31 23:56:16');
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isTransferable', '0', '0', '0', '', '', '')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isWithdrawable', '0', '0', '0', '', '', 'bank=1,crypto=2,both=3')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isWallet', '1', '1', '1', '', '', '')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isAdjustable', '1', '1', '0', '', '', '')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isDisplayOnTransaction', '1', '1', '1', '', '', '')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'showTransactionHistory', '1', '1', '1', '', '', '')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'withdrawalAdminFee', '0', '0', '0', '', '0', 'value = fee amount, reference = percentage')
+    </query>
+    <query>
+        INSERT INTO `credit_setting` (`id`, `credit_id`, `name`, `value`, `admin`, `member`, `type`, `reference`, `description`) VALUES (NULL, '1002', 'isPurchasable', '0', '0', '0', '', '', '')
+    </query>
+</document> 

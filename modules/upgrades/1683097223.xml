@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE guest_token ADD sale_id varchar(255) COLLATE utf8_unicode_ci AFTER client_id;
+    </query>
+</document> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `sale_order_item` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `so_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `so_details_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `product_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `reference_id` varchar(255) COLLATE utf8_unicode_ci,
+            `is_package` varchar(255) COLLATE utf8_unicode_ci,
+            `remark` varchar(255) COLLATE utf8_unicode_ci,
+            `deleted` varchar(255) COLLATE utf8_unicode_ci,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

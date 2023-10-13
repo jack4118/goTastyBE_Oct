@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `product_favorite` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `product_id` bigint(20),
+            `client_id` bigint(20),
+            `deleted` tinyint(1),
+            `created_ts` datetime,
+       		`updated_ts` datetime,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

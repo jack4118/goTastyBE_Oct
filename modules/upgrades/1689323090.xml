@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `sale_order` ADD `billing_address2` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `billing_address`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` ADD `billing_post_code` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `billing_address2`;
+    </query>
+     <query>
+        ALTER TABLE `sale_order` ADD `billing_state_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `billing_post_code`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` ADD `billing_city` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `billing_state_id`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` ADD `shipping_address2` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `shipping_address`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` ADD `shipping_post_code` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `shipping_address2`;
+    </query>
+     <query>
+        ALTER TABLE `sale_order` ADD `shipping_state_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `shipping_post_code`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` ADD `shipping_city` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `shipping_state_id`;
+    </query>
+</document>

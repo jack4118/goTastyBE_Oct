@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+
+    <query>
+        ALTER TABLE `message_assigned`
+        ADD COLUMN `provider_id` BIGINT(10) DEFAULT 0;
+
+    </query>
+
+    <query>
+        ALTER TABLE `message_assigned`
+        MODIFY `provider_id` BIGINT(10) AFTER `id`
+    </query>
+    
+</document> 

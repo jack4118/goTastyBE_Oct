@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10019', 'GoTasty Member Enquiry', '*GoTasty Member Enquiry* Client Name: %%name%% Client Email: %%email%% Client Phone Number: %%phone%%', '', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+</document> 

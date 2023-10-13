@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        DROP TABLE IF EXISTS `purchase_order`;
+    </query>
+    <query>
+       CREATE TABLE purchase_order (
+            id BIGINT(20) AUTO_INCREMENT PRIMARY KEY,
+            vendor_id BIGINT(20),
+            vendor_address VARCHAR(255),
+            order_number VARCHAR(255),
+            warehouse_id BIGINT(20),
+            total_quantity INT,
+            total_cost FLOAT(20, 2),
+            remarks VARCHAR(255),
+            status VARCHAR(255),
+            created_by INT,
+            approved_by INT,
+            requested_date DATETIME,
+            purchase_date DATETIME,
+            approved_date DATETIME,
+            created_at DATETIME,
+            updated_at DATETIME
+        ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    </query>
+    <query>
+    CREATE TABLE purchase_order_product (
+        id BIGINT(20) AUTO_INCREMENT PRIMARY KEY,
+        purchase_order_id BIGINT(20),
+        product_id BIGINT(20),
+        product_name VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+        quantity INT(11),
+        cost FLOAT(20, 2),
+        total_cost FLOAT(20, 2),
+        type VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci,
+        created_at DATETIME,
+        updated_at DATETIME
+    );
+    </query>
+</document> 

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `sale_order` DROP `payslip`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` DROP `receipt`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` DROP `receipt_id`;
+    </query>
+     <query>
+        ALTER TABLE `sale_order` DROP `quotation_id`;
+    </query>
+     <query>
+        ALTER TABLE `sale_order` DROP `quotation_date`;
+    </query>
+     <query>
+        ALTER TABLE `sale_order` DROP `quotation_expired_date`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order` DROP `quotation`;
+    </query>
+</document> 

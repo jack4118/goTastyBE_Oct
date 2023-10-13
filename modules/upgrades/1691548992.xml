@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10028', 'GoTasty Career Application', 'We have received your application. Thanks for contacting us, we appreciate this. Our team shall get back to you at the soonest.', 'Triggers when client choose career application, and system should send this message back to client', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `message_code` (`id`, `code`, `title`, `content`, `description`, `module`, `deleted`, `created_at`) VALUES (NULL, '10029', 'GoTasty Write To Us', 'We have received your inquiry. Thanks for contacting us, we appreciate this. Our team shall get back to you at the soonest. <br/><br/>If you do not receive call / email from us, kindly contact us at +60182626000', 'Triggers when client submit write to us application, and system should send this message back to client', 'Standard Platform', '0', '0000-00-00 00:00:00');
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE sale_order ADD token varchar(255) COLLATE utf8_unicode_ci AFTER shipping_address;
+    </query>
+</document> 

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type` , `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `remark`, `currency`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'parcel', '', '', '', 'createParcel', '0', '0', '0', '', 'https://staging.api.parcelhub.com.my/v1/shipments/create', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'https://staging.api.parcelhub.com.my/v1/shipments/create', '', '171', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type` , `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `remark`, `currency`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'parcel', '', '', '', 'parcelLabel', '0', '0', '0', '', 'https://staging.api.parcelhub.com.my/v1/shipments/label', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'https://staging.api.parcelhub.com.my/v1/shipments/label', '', '172', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider` (`id`, `company`, `name`, `username`, `password`, `api_key`, `type` , `priority`, `disabled`, `deleted`, `default_sender`, `url1`, `remark`, `currency`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'parcel', '', '', '', 'parcelTrack', '0', '0', '0', '', 'https://staging.api.parcelhub.com.my/v1/shipments/track', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`, `created_at`, `updated_at`) VALUES (NULL, 'parcelhub', 'https://staging.api.parcelhub.com.my/v1/shipments/track', '', '173', '0000-00-00 00:00:00', '0000-00-00 00:00:00')
+    </query>
+</document> 

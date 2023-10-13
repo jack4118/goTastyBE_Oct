@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+   <query>
+INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) 
+VALUES (NULL, '3', '436', '0', '2023-06-12 15:38:06', '2022-06-12 15:38:06');
+    </query>
+
+   <query>
+INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) 
+VALUES (NULL, '3', '437', '0', '2023-06-12 15:38:06', '2022-06-12 15:38:06');
+    </query>
+
+      <query>
+INSERT INTO `roles_permission` (`id`, `role_id`, `permission_id`, `disabled`, `created_at`, `updated_at`) 
+VALUES (NULL, '3', '438', '0', '2023-06-12 15:38:06', '2022-06-12 15:38:06');
+    </query>
+</document> 

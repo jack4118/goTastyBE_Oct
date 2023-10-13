@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `product_review`  ADD `created_by` varchar(25) AFTER `created_ts`;
+    </query>
+    <query>
+    ALTER TABLE `product_review`  ADD `approved_by` varchar(25) AFTER `approved_ts`;
+    </query>
+    <query>
+    ALTER TABLE `product_review`  ADD `status` varchar(255) AFTER `msg`;
+    </query>
+</document>

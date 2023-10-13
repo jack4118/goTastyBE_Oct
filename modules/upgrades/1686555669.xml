@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+   <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, 
+        `type`, `parent_id`, `file_path`, `level`, `priority`, 
+        `icon_class_name`, `translation_code`, `disabled`, 
+        `master_disabled`, `site`, `created_at`, `updated_at`, 
+        `reference_table`, `reference_id`, `last_line`)
+
+        VALUES (NULL, 'Product Needs', 'Product Needs', 
+        'Menu', '436','getWishListDetail.php','1','1', '', 'A01750', '0', '0', 'Admin', 
+        'NOW()', 'NOW()', '', '', '0');
+    </query>
+
+   <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, 
+        `type`, `parent_id`, `file_path`, `level`, `priority`, 
+        `icon_class_name`, `translation_code`, `disabled`, 
+        `master_disabled`, `site`, `created_at`, `updated_at`, 
+        `reference_table`, `reference_id`, `last_line`)
+
+        VALUES (NULL, 'Customer Details', 'Customer Details', 
+        'Page', '436','customerDetail.php','2','1', '', 'A01751', '0', '0', 'Admin', 
+        'NOW()', 'NOW()', '', '', '0');
+    </query>
+</document> 

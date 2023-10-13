@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `permissions` SET `level` = '2', `parent_id` = '453'  WHERE `permissions`.`id` = 455;
+    </query>
+</document>

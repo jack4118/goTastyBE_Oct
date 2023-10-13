@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'rewarded_point', 'journalTranslate', 'M03800', '1', '0')
+    </query>
+</document>

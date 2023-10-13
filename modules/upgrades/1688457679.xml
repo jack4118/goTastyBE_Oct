@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE system_settings SET reference = '31-G, Jalan Damai Raya 6, Alam Damai,
+56000 W.P. Kuala Lumpur.'
+    WHERE name = 'pickUpOrigins'
+    </query>
+</document>

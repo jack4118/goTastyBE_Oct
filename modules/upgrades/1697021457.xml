@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'delivery_method', 'journalTranslate', 'A01804', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_fee', 'journalTranslate', 'M02882', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'release_amount', 'journalTranslate', 'A01806', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_name', 'journalTranslate', 'A01805', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_phone', 'journalTranslate', 'A01807', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_address', 'journalTranslate', 'A01808', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_address2', 'journalTranslate', 'A01809', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_post_code', 'journalTranslate', 'A01810', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_state_id', 'journalTranslate', 'A01811', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'billing_city', 'journalTranslate', 'A01812', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_name', 'journalTranslate', 'A01813', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_phone', 'journalTranslate', 'A01814', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_address', 'journalTranslate', 'A01815', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_address2', 'journalTranslate', 'A01816', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_post_code', 'journalTranslate', 'A01817', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_state_id', 'journalTranslate', 'A01818', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'shipping_city', 'journalTranslate', 'A01819', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'payment_method', 'journalTranslate', 'M02885', '1', '0');
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'payment_amount', 'journalTranslate', 'A01820', '1', '0');
+    </query>
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'inv_delivery_order', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00');
+    </query>
+    <query>
+        INSERT INTO `journal_tables` (`id`, `table_name`, `type`, `disabled`, `deleted`, `created_at`, `updated_at`) VALUES (NULL, 'inv_delivery_order_detail', 'Column Based', '0', '0', '2023-04-14 11:03:59', '0000-00-00 00:00:00')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'delivery_partner', 'journalTranslate', 'A01821', '1', '0')
+    </query>
+    <query>
+        INSERT INTO `enumerators` (`id`, `name`, `type`, `translation_code`, `priority`, `deleted`) VALUES (NULL, 'tracking_number', 'journalTranslate', 'M02995', '1', '0');
+    </query>
+</document>

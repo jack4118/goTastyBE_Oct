@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<query>
+    ALTER TABLE `purchase_order`  ADD `vendor_address` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL  AFTER `warehouse_id`;
+</query>
+</document> 

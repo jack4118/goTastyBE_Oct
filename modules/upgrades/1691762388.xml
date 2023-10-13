@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `sale_order` ADD `rewarded_point` INT DEFAULT 0 AFTER `release_amount`;
+    </query>
+</document>

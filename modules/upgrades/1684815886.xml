@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `cooking_suggestion` CHANGE `name` `name` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+    </query>
+    <query>
+        ALTER TABLE `cooking_suggestion` CHANGE `defaultURL` `defaultURL` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+    </query>
+    <query>
+        ALTER TABLE `cooking_suggestion_details` CHANGE `url` `url` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+    </query>
+</document> 

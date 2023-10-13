@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE sale_order ADD tracking_no varchar(255) AFTER invoice;
+    </query>
+</document> 

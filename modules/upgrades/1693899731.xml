@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `purchase_order` CHANGE `approved_by` `approved_by` VARCHAR(255) NULL DEFAULT NULL;
+    </query>
+    <query>
+        ALTER TABLE `purchase_order` CHANGE `created_by` `created_by` VARCHAR(255) NULL DEFAULT NULL;
+    </query>
+</document>

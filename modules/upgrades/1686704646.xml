@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `product_review` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `product_id` bigint(20),
+            `client_id` bigint(20),
+            `deleted` tinyint(1),
+            `is_approve` tinyint(1),
+            `rating` tinyint(1),
+            `msg` text,
+            `approved_ts` datetime,
+            `created_ts` datetime,
+       		`updated_ts` datetime,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 
+

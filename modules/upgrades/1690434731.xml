@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `sale_order_item` DROP COLUMN `reference_id`;
+    </query>
+    <query>
+        ALTER TABLE `sale_order_item` ADD `package_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_id`;
+    </query>
+</document>

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `permissions` SET `name` = 'Sale Order', `description` = 'Sale Order', `translation_code` = 'A01790'  WHERE `name` = 'Edit Sale Order' and `type` = 'Sub Menu';
+    </query>
+</document>

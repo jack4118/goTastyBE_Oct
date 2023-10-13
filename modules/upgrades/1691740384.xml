@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `gotasty_delivery_method` SET `deleted` = '1', `status` = 'Inactive'  WHERE `name` = 'Package Delivery Charges';
+    </query>
+</document>

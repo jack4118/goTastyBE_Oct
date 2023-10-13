@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `inv_delivery_order` DROP COLUMN `inv_order_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order` ADD `so_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` DROP COLUMN `mlm_product_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` DROP COLUMN `inv_product_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` DROP COLUMN `quantity`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` DROP COLUMN `inv_stock_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` ADD `product_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `inv_delivery_order_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` ADD `serial_number` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_id`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` DROP COLUMN `price`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` ADD `disabled` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `serial_number`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order_detail` ADD `box` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `serial_number`;
+    </query>
+    <query>
+        ALTER TABLE `inv_delivery_order` ADD `delivery_partner` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `reference_number`;
+    </query>
+</document>

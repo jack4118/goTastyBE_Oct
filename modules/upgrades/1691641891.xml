@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `delivery_method_postcode` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `delivery_method_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `from_range` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `to_range` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+            `state` varchar(255) COLLATE utf8_unicode_ci,
+            `shipping_fee` varchar(255) COLLATE utf8_unicode_ci,
+            `surcharge` varchar(255) COLLATE utf8_unicode_ci,
+            `disable` varchar(255) COLLATE utf8_unicode_ci,
+            `created_at` datetime COLLATE utf8_unicode_ci NOT NULL,
+            `updated_at` datetime COLLATE utf8_unicode_ci NOT NULL,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<query>
+INSERT INTO message_code(code, title, content,description, module) VALUES ('10016', 'GoTasty Sale Order Telegram Notification', ' %%userAction%% Phone Number : %%phoneNum%% Sales Order Name: %%soName%%', 'Trigger when create new sales order','Standard Platform’);
+</query>
+
+<query>
+INSERT INTO provider(company, name,api_key, type, url1) VALUES
+        ('GoTastySalesOrder', 'telegram',
+        '5956137441:AAE4tCryvCT6ZSSnnmlJ68JEX95lCsLyJLc',
+        'notification','https://api.telegram.org/bot5956137441:AAE4tCryvCT6ZSSnnmlJ68JEX95lCsLyJLc');
+</query>
+
+<query>
+INSERT INTO `provider_setting` (`id`, `name`, `value`, `type`, `provider_id`) 
+VALUES (NULL, 'saleOrderTelegramNotificationURL', 'https://api.telegram.org/bot5956137441:AAE4tCryvCT6ZSSnnmlJ68JEX95lCsLyJLc', '', '166');
+</query>
+
+
+</document> 

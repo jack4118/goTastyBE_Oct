@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `vendor_address` ADD `name` VARCHAR(255) NOT NULL AFTER `id`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `mobile` VARCHAR(255) NOT NULL AFTER `name`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `address_line_1` VARCHAR(255) NOT NULL AFTER `mobile`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `address_line_2` VARCHAR(255) NOT NULL AFTER `address_line_1`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `city` VARCHAR(255) NOT NULL AFTER `address_line_2`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `state` VARCHAR(255) NOT NULL AFTER `city`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `zip` VARCHAR(255) NOT NULL AFTER `state`;
+    </query>
+    <query>
+        ALTER TABLE `vendor_address` ADD `country` VARCHAR(255) NOT NULL AFTER `zip`;
+    </query>
+</document>

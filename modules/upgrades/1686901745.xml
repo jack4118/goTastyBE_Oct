@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `discount_type` varchar(255) AFTER `discount_apply_on`;
+    </query>
+    <query>
+    ALTER TABLE `mlm_promo_code`  ADD `discount` varchar(255) AFTER `discount_type`;
+    </query>
+    <query>
+    ALTER TABLE `promo_code_detail` DROP COLUMN `discount_type`;
+    </query>
+    <query>
+    ALTER TABLE `promo_code_detail` DROP COLUMN `discount`;
+    </query>
+</document>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE permissions SET parent_id = 428
+    WHERE id = '389' and name = 'bonusDef'
+    </query>
+    <query>
+        UPDATE permissions SET disabled = '0'
+    WHERE id = '389' and name = 'bonusDef'
+    </query>
+    <query>
+        UPDATE permissions SET disabled = '1'
+    WHERE id = '100' and name = 'Loyalty Point Listing'
+    </query>
+</document> 

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        ALTER TABLE `delivery_method_postcode` CHANGE `from_range` `from_range` BIGINT(10) NOT NULL;
+    </query>
+    <query>
+        ALTER TABLE `delivery_method_postcode` CHANGE `to_range` `to_range` BIGINT(10) NOT NULL;
+    </query>
+</document> 

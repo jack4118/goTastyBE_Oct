@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+   <query>
+        INSERT INTO `permissions` (`id`, `name`, `description`, 
+        `type`, `parent_id`, `file_path`, `level`, `priority`, 
+        `icon_class_name`, `translation_code`, `disabled`, 
+        `master_disabled`, `site`, `created_at`, `updated_at`, 
+        `reference_table`, `reference_id`, `last_line`)
+
+        VALUES (NULL, 'Customer Review Detail', 'Customer Review Detail', 
+        'Page', '444','getCustomerReviewDetail.php','2','1', '', 'A01757', '0', '0', 'Admin', 
+        'NOW()', 'NOW()', '', '', '0');
+    </query>
+</document> 

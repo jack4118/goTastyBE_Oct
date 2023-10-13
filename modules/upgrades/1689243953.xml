@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        UPDATE `goTastyTest`.`permissions` SET `name` = 'Add New Purchase Request', `description` = 'Add New Purchase Request' WHERE `permissions`.`id` = 409;
+    </query>
+</document>

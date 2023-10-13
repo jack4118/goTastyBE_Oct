@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE `guest_token` (
+            `id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `token` varchar(255) COLLATE utf8_unicode_ci,
+            `client_id` varchar(255) COLLATE utf8_unicode_ci,
+            `created_at` datetime,
+            PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+    </query>
+</document> 

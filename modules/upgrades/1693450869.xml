@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+<query>
+ALTER TABLE `audit` ADD `audit_id` VARCHAR(255) NOT NULL AFTER `created_type`;
+</query>
+<query>
+ALTER TABLE `client_audit` ADD `audit_id` VARCHAR(255) NOT NULL AFTER `created_type`;
+</query>
+<query>
+ALTER TABLE `client_detail_audit` ADD `audit_id` VARCHAR(255) NOT NULL AFTER `created_type`;
+</query>
+<query>
+ALTER TABLE `sale_order_audit` ADD `audit_id` VARCHAR(255) NOT NULL AFTER `created_type`;
+</query>
+<query>
+ALTER TABLE `sale_order_detail_audit` ADD `audit_id` VARCHAR(255) NOT NULL AFTER `created_type`;
+</query>
+</document> 

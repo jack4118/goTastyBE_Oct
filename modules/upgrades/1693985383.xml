@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+        CREATE TABLE po_assign (
+            id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+            po_id BIGINT(20),
+            assignee VARCHAR(255),
+            assign_by VARCHAR(255),
+            status VARCHAR(255),
+            response_at DATETIME,
+            reason VARCHAR(255),
+            created_at DATETIME,
+            updated_at DATETIME
+        );
+    </query>
+</document>

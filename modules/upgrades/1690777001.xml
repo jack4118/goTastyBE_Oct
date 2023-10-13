@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<document type="TABLE">
+    <query>
+    ALTER TABLE `sale_order_item`  ADD `quantity` varchar(255) AFTER `is_package`;
+    </query>
+</document>
