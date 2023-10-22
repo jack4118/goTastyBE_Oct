@@ -1,4 +1,4 @@
-# GoTasty Backend Project
+# GT Backend Project
 
 
 Things to becareful while pushing updates : 
